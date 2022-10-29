@@ -32,7 +32,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-container {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.label-container {
+  margin: 1rem;
+  padding: 1rem;
 }

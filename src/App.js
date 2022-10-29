@@ -4,21 +4,40 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='form-container'>
+        <form action="http://localhost:5000/post" method='POST'>
+          <div className='label-container'>
+            <label>Enter your name:
+              <input type="text" name='username' />
+            </label>
+          </div>
+          <div className='label-container'>
+            <label>Email:
+              <input type="text" name='email' />
+            </label>
+          </div>
+          <div className='label-container'>
+            <label>Phone:
+              <input type="text" name='phoneNumber' />
+            </label>
+          </div>
+          <div className='label-container'>
+            <label>Number of rooms
+              <input type="text" name='noOfRooms' />
+            </label>
+          </div>
+          <div className='label-container'>
+            <label>Check In date:
+              <input type="text" placeholder='YYYY-MM-DD' name='checkIn' />
+            </label>
+            <label style={{ padding: "1rem" }}>Check Out date:
+              <input type="text" placeholder='YYYY-MM-DD' name='checkOut' />
+            </label>
+          </div>
+          <button type='submit'>Book Room</button>
+        </form>
+      </div >
+    </div >
   );
 }
 
